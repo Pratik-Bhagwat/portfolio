@@ -237,7 +237,7 @@ const projectList = [
       },
     ],
     completed: true,
-    URL: "",
+    URL: "https://portfolio-umber-seven.vercel.app/",
     videoURL:
       "https://res.cloudinary.com/dtvux1tgv/video/upload/v1711437254/x2sn9px63chwf84vmi1e.mp4",
   },
