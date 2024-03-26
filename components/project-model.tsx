@@ -1,6 +1,5 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
-import ProjectImageCarousel from "./project-image-carousel";
 import { CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Project } from "@/types";
 import Link from "next/link";
