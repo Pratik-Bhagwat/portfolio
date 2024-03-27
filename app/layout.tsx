@@ -4,6 +4,7 @@ import { AvanGarde, ProximaNova } from "@/lib/customFonts";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
 import ResumeDownloadSpinner from "@/components/resume-download-spinner";
+import SmoothScroll from "@/components/smooth-scroll";
 
 export const metadata: Metadata = {
   title: "Pratik's Portfolio",
@@ -16,10 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className="">
       <body className={cn(AvanGarde.variable, ProximaNova.variable)}>
         <Navbar />
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
         <ResumeDownloadSpinner />
       </body>
     </html>
