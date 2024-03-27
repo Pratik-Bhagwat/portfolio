@@ -3,7 +3,7 @@ import resumeSVG from "../assets/svgs/CarbonDocumentAttachment.svg";
 import Link from "next/link";
 
 const ResumeDownloadSpinner = () => {
-  const text = "Pratik - Bhagwat - resume - view - here -";
+  const text = "View - Pratik's - resume - here -";
   return (
     <div className="fixed bottom-3 right-0 z-10">
       <div className="relative flex size-28 items-center justify-center rounded-full">
@@ -11,7 +11,7 @@ const ResumeDownloadSpinner = () => {
           style={{ position: "absolute", zIndex: 1 }}
           className="flex size-14 animate-pulse items-center justify-center rounded-full text-foreground"
         >
-          <Link href="/home">
+          <Link href="https://docs.google.com/document/d/1zVRniMGBp7ydWiIVJ-R6twguUv1qxIn2JhRo1110oXg/edit?usp=sharing">
             <Image
               src={resumeSVG}
               alt="resume-svg"
@@ -26,7 +26,7 @@ const ResumeDownloadSpinner = () => {
               <span
                 key={idx}
                 style={{
-                  transform: `rotate(${idx * 8.7}deg)`,
+                  transform: `rotate(${idx * 10.7}deg)`,
                 }}
                 className="absolute left-1/2 origin-[0_56px] font-proximaNova text-xs uppercase"
               >

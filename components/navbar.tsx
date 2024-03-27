@@ -1,12 +1,16 @@
 "use client";
+
 import { navItems } from "@/constants";
 import Wrapper from "./wrapper";
 import Link from "next/link";
 import { useState } from "react";
-import { GithubIcon, LucideLinkedin, MenuIcon, X } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import MobileNav from "./mobile-nav";
 import { Button } from "./ui/button";
 import { AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import githubSVG from "@/assets/svgs/RiGithubFill.svg";
+import linkedInSVG from "@/assets/svgs/RiLinkedinBoxFill.svg";
 
 const Navbar = () => {
   const [isSelected, setIsSelected] = useState("");
@@ -41,10 +45,20 @@ justify-center sm:flex sm:space-x-4 md:space-x-10"
           </ul>
           <div className="hidden items-center space-x-3 sm:flex">
             <Link href="https://www.linkedin.com/in/pratik-bhagwat-dev/">
-              <LucideLinkedin className="sm:size-4 lg:size-6" />
+              {/* <LucideLinkedin className="sm:size-4 lg:size-6" /> */}
+              <Image
+                src={linkedInSVG}
+                alt="linkedin svg"
+                className="sm:size-4 lg:size-6"
+              />
             </Link>
             <Link href="https://github.com/Pratik-Bhagwat">
-              <GithubIcon className="sm:size-4 lg:size-6" />
+              {/* <GithubIcon className="sm:size-4 lg:size-6" /> */}
+              <Image
+                src={githubSVG}
+                alt="github svg"
+                className="sm:size-4 lg:size-6"
+              />
             </Link>
           </div>
           <div className="sm:hidden">
