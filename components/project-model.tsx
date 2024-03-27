@@ -24,13 +24,13 @@ const ProjectModel = ({ project }: ProjectModelProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="group relative max-h-[300px] max-w-full cursor-pointer overflow-hidden md:h-[265px]">
+        <div className="group/img relative max-h-[24vh] max-w-full cursor-pointer overflow-hidden transition-all duration-500 ease-in-out group-hover/card:scale-90 md:max-h-[27vh] lg:max-h-[33vh]">
           <Image
             src={thumbnail}
             alt="image"
             className="h-full w-full rounded-lg object-cover"
           />
-          <div className="absolute top-96 h-full w-full bg-[#f7998484] transition-all duration-300 group-hover:top-0" />
+          <div className="absolute top-96 h-full w-full rounded-lg bg-[#f7998484] transition-all duration-300 group-hover/img:top-0" />
         </div>
       </DialogTrigger>
       <DialogContent>

@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="">
+    <html lang="en">
       <body className={cn(AvanGarde.variable, ProximaNova.variable)}>
         <Navbar />
         <SmoothScroll>{children}</SmoothScroll>

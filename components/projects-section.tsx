@@ -9,10 +9,12 @@ const ProjectsSection = () => {
         <h5 className="font-proximaNova text-sm uppercase tracking-[0.5em] sm:text-base">
           Projects
         </h5>
-        <div className="grid grid-cols-1 place-items-center gap-y-10 px-2 md:grid-cols-2 xl:grid-cols-3">
-          {projectList.map((project, idx) => (
-            <ProjectCard key={idx} project={project} />
-          ))}
+        <div className="flex items-center justify-center">
+          <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-2 lg:gap-x-10">
+            {projectList.map((project, idx) => (
+              <ProjectCard key={idx} project={project} />
+            ))}
+          </div>
         </div>
       </Wrapper>
     </section>
