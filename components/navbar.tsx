@@ -68,11 +68,9 @@ justify-center sm:flex sm:space-x-4 md:space-x-10"
             >
               {isOpen ? <X /> : <MenuIcon />}
             </Button>
-            {isOpen && (
-              <AnimatePresence mode="sync">
-                <MobileNav />
-              </AnimatePresence>
-            )}
+            <AnimatePresence mode="sync">
+              {isOpen && <MobileNav />}
+            </AnimatePresence>
           </div>
         </nav>
       </Wrapper>
