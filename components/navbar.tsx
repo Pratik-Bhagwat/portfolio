@@ -66,7 +66,7 @@ justify-center sm:flex sm:space-x-4 md:space-x-10"
               onClick={() => setIsOpen(!isOpen)}
               className="rounded-full bg-transparent"
             >
-              {isOpen ? <X /> : <MenuIcon />}
+              {isOpen ? <X /> : <MenuIcon />}~
             </Button>
             <AnimatePresence mode="sync">
               {isOpen && <MobileNav />}
