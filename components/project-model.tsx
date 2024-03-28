@@ -11,20 +11,12 @@ interface ProjectModelProps {
 }
 
 const ProjectModel = ({ project }: ProjectModelProps) => {
-  const {
-    description,
-    images,
-    name,
-    thumbnail,
-    videoURL,
-    techstacks,
-    completed,
-    URL,
-  } = project;
+  const { description, name, thumbnail, videoURL, techstacks, completed, URL } =
+    project;
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="group/img relative max-h-[24vh] max-w-full cursor-pointer overflow-hidden transition-all duration-500 ease-in-out group-hover/card:scale-90 md:max-h-[27vh] lg:max-h-[33vh]">
+        <div className="group/img relative max-h-[24vh] max-w-full cursor-pointer overflow-hidden transition-all duration-500 ease-in-out group-hover/card:scale-90 md:max-h-[27vh] lg:max-h-[31vh]">
           <Image
             src={thumbnail}
             alt="image"

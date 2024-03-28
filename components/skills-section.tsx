@@ -15,7 +15,7 @@ const SkillsSection = () => {
       animate(
         "li",
         { y: [-100, 0], opacity: [0, 1], scale: [0, 1] },
-        { duration: 2, ease: [0.45, 0, 0.55, 1], delay: stagger(0.5) },
+        { duration: 2, ease: [0.45, 0, 0.55, 1], delay: stagger(0.1) },
       );
     }
   });
