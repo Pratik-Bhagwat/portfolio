@@ -4,21 +4,17 @@ import { navItems } from "@/constants";
 import Wrapper from "./wrapper";
 import Link from "next/link";
 import { useState } from "react";
-import { MenuIcon, X } from "lucide-react";
-import MobileNav from "./mobile-nav";
-import { Button } from "./ui/button";
-import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import githubSVG from "@/assets/svgs/RiGithubFill.svg";
 import linkedInSVG from "@/assets/svgs/RiLinkedinBoxFill.svg";
+import MobileNav from "./mobile-nav";
 
 const Navbar = () => {
   const [isSelected, setIsSelected] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="fixed inset-0 z-10 h-14 bg-opacity-40 backdrop-blur-lg backdrop-filter">
-      <Wrapper className="py-3">
+      <Wrapper className="relative py-3">
         <nav className="flex items-center justify-between">
           <h4 className="font-avanGarde text-xl lg:text-2xl">
             <Link href="/">Portfolio</Link>
@@ -61,17 +57,7 @@ justify-center sm:flex sm:space-x-4 md:space-x-10"
               />
             </Link>
           </div>
-          <div className="sm:hidden">
-            <Button
-              onClick={() => setIsOpen(!isOpen)}
-              className="rounded-full bg-transparent"
-            >
-              {isOpen ? <X /> : <MenuIcon />}~
-            </Button>
-            <AnimatePresence mode="sync">
-              {isOpen && <MobileNav />}
-            </AnimatePresence>
-          </div>
+          <MobileNav />
         </nav>
       </Wrapper>
     </header>
